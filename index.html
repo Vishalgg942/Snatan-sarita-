@@ -1,248 +1,115 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Snatan Sarita - धार्मिक वीडियो और आध्यात्मिक ब्लॉग का स्रोत। हमारे साथ जुड़ें और आध्यात्मिक ज्ञान प्राप्त करें।" />
-  <title>Snatan Sarita - धार्मिक वीडियो और ब्लॉग</title>
-  <style>
-    /* Reset और बेसिक स्टाइल */
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    a {
-      color: #4a7c59;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    header {
-      background-color: #4a7c59;
-      color: white;
-      padding: 25px 15px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
-      letter-spacing: 2px;
-    }
-    header p {
-      margin-top: 8px;
-      font-size: 1.2rem;
-      font-weight: 500;
-      font-style: italic;
-    }
-    nav {
-      background-color: #3b6b47;
-      padding: 12px 0;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: white;
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin: 0 20px;
-      padding: 6px 0;
-      display: inline-block;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      border-radius: 4px;
-    }
-    nav a:hover,
-    nav a:focus {
-      background-color: #2e4d32;
-      color: #fff;
-      outline: none;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px 40px;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    h2 {
-      color: #2e4d32;
-      border-bottom: 3px solid #4a7c59;
-      padding-bottom: 8px;
-      margin-bottom: 25px;
-      font-weight: 700;
-      font-size: 2rem;
-    }
-    /* वीडियो एम्बेड कंटेनर */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-      margin-bottom: 30px;
-      background-color: #000;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      border-radius: 10px;
-    }
-    /* ब्लॉग पोस्ट स्टाइल */
-    article {
-      background: white;
-      padding: 20px 25px;
-      border-radius: 8px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-      margin-bottom: 25px;
-      transition: box-shadow 0.3s ease;
-    }
-    article:hover {
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    }
-    article h3 {
-      margin-top: 0;
-      color: #3b6b47;
-      font-size: 1.5rem;
-    }
-    article p {
-      font-size: 1rem;
-      margin: 12px 0 15px;
-      color: #555;
-    }
-    article a {
-      font-weight: 600;
-      color: #4a7c59;
-    }
-    /* Google Custom Search Box */
-    #search-box {
-      text-align: center;
-      margin-bottom: 50px;
-    }
-    /* संपर्क सेक्शन */
-    #contact p {
-      font-size: 1.1rem;
-    }
-    #contact a {
-      font-weight: 600;
-      color: #4a7c59;
-    }
-    /* फुटर */
-    footer {
-      background-color: #4a7c59;
-      color: white;
-      text-align: center;
-      padding: 18px 15px;
-      font-size: 1rem;
-      letter-spacing: 1px;
-      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    }
-    /* Responsive */
-    @media (max-width: 768px) {
-      nav a {
-        margin: 0 12px;
-        font-size: 1rem;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.6rem;
-      }
-      article h3 {
-        font-size: 1.3rem;
-      }
-    }
-    @media (max-width: 480px) {
-      nav a {
-        display: block;
-        margin: 8px 0;
-      }
-      main {
-        padding: 0 10px 30px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Play Free Online Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Game<span>Hub</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </header>
 
-<header>
-  <h1>Snatan Sarita</h1>
-  <p>धार्मिक वीडियो और आध्यात्मिक ज्ञान का स्रोत</p>
-</header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Play Free Online Games</h2>
+            <p>Thousands of games to play instantly in your browser</p>
+            <button class="play-now">Play Now</button>
+        </div>
+    </section>
 
-<nav>
-  <a href="#search-box" tabindex="1">सर्च</a>
-  <a href="#videos" tabindex="2">वीडियो</a>
-  <a href="#blog" tabindex="3">ब्लॉग</a>
-  <a href="#contact" tabindex="4">संपर्क करें</a>
-</nav>
+    <section id="games" class="game-section">
+        <h2 class="section-title">Popular Games</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200?text=Ludo+King" alt="Ludo King">
+                <h3>Ludo King</h3>
+                <p>Classic board game for 2-4 players</p>
+                <button>Play Now</button>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200?text=8+Ball+Pool" alt="8 Ball Pool">
+                <h3>8 Ball Pool</h3>
+                <p>Challenge players worldwide in pool</p>
+                <button>Play Now</button>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200?text=PUBG+Mobile" alt="PUBG Mobile">
+                <h3>PUBG Mobile</h3>
+                <p>Battle royale survival game</p>
+                <button>Play Now</button>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200?text=Car+Racing" alt="Car Racing">
+                <h3>Car Racing</h3>
+                <p>High speed racing action</p>
+                <button>Play Now</button>
+            </div>
+        </div>
+    </section>
 
-<main>
+    <section id="about" class="about-section">
+        <h2 class="section-title">About GameHub</h2>
+        <div class="about-content">
+            <p>GameHub is your premier destination for free online gaming. We offer a wide variety of games across multiple genres that you can play directly in your browser without any downloads.</p>
+            <p>Our collection is updated regularly with new and exciting games to keep you entertained for hours.</p>
+        </div>
+    </section>
 
-  <!-- Google Custom Search Engine Section -->
-  <section id="search-box" aria-label="साइट खोज">
-    <!-- Google CSE कोड यहाँ एम्बेड करें -->
-    <gcse:search></gcse:search>
-  </section>
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-  <!-- वीडियो सेक्शन -->
-  <section id="videos" aria-label="लोकप्रिय वीडियो">
-    <h2>हमारे लोकप्रिय वीडियो</h2>
-    <div class="video-container" aria-label="वीडियो 1">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen title="धार्मिक वीडियो 1"></iframe>
-    </div>
-    <div class="video-container" aria-label="वीडियो 2">
-      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen title="धार्मिक वीडियो 2"></iframe>
-    </div>
-  </section>
-
-  <!-- ब्लॉग सेक्शन -->
-  <section id="blog" aria-label="धार्मिक ब्लॉग पोस्ट">
-    <h2>धार्मिक ब्लॉग</h2>
-    <article>
-      <h3>धार्मिक जीवन के महत्व पर विचार</h3>
-      <p>धार्मिक जीवन हमें शांति, संतोष और आध्यात्मिक उन्नति प्रदान करता है। यह हमारे मन को स्थिरता और सकारात्मकता से भरता है।</p>
-      <a href="#" aria-label="धार्मिक जीवन के महत्व पर विचार पढ़ें">पूरा पढ़ें</a>
-    </article>
-    <article>
-      <h3>संतों के उपदेश और उनका प्रभाव</h3>
-      <p>संतों के उपदेश हमारे जीवन को सही दिशा देते हैं और आध्यात्मिक विकास में मदद करते हैं। उनके विचार हमारे लिए प्रेरणा स्रोत हैं।</p>
-      <a href="#" aria-label="संतों के उपदेश और उनका प्रभाव पढ़ें">पूरा पढ़ें</a>
-    </article>
-  </section>
-
-  <!-- संपर्क सेक्शन -->
-  <section id="contact" aria-label="संपर्क जानकारी">
-    <h2>संपर्क करें</h2>
-    <p>आप हमें ईमेल कर सकते हैं: <a href="mailto:contact@snatansarita.com">contact@snatansarita.com</a></p>
-  </section>
-
-</main>
-
-<footer>
-  &copy; 2025 Snatan Sarita | सभी अधिकार सुरक्षित
-</footer>
-
-<!-- Google Custom Search Engine Script -->
-<script async src="https://cse.google.com/cse.js?cx=YOUR_SEARCH_ENGINE_ID"></script>
-
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Game<span>Hub</span></h2>
+                <p>Play. Enjoy. Repeat.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 GameHub. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
-                                                                                                                </html>
-                                                                                                                
+</html>
