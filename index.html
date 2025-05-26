@@ -1,62 +1,238 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sanatan Sarita - आध्यात्मिक यात्रा</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sanatan Sarita - A spiritual journey through Shiva devotion and Hindu wisdom">
+  <title>Sanatan Sarita - Spiritual Journey</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
+  <!-- Header with enhanced navigation -->
   <header>
-    <img src="logo.png" alt="Sanatan Sarita Logo" class="logo"/>
-    <h1>Sanatan Sarita</h1>
-    <p class="tagline">एक आध्यात्मिक यात्रा शिव भक्ति और सनातन धर्म के साथ</p>
+    <div class="header-container">
+      <img src="logo.png" alt="Sanatan Sarita Logo" class="logo">
+      <div class="header-text">
+        <h1>Sanatan Sarita</h1>
+        <p class="tagline">A spiritual journey through Shiva devotion and Hindu wisdom</p>
+      </div>
+    </div>
+    
     <nav>
       <ul>
-        <li><a href="#">होम</a></li>
-        <li><a href="#about">हमारे बारे में</a></li>
-        <li><a href="#privacy">प्राइवेसी पॉलिसी</a></li>
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#videos"><i class="fab fa-youtube"></i> Videos</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#resources"><i class="fas fa-book"></i> Resources</a></li>
+        <li><a href="#privacy"><i class="fas fa-shield-alt"></i> Privacy</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Enhanced Google Search Section -->
   <section class="search-box">
-    <form action="https://www.google.com/search" method="GET" target="_blank">
-      <input type="text" name="q" placeholder="Google Search..."/>
-      <button type="submit">खोजें</button>
-    </form>
-  </section>
-
-  <section class="videos">
-    <h2>हमारे यूट्यूब वीडियो</h2>
-    <div class="video-grid">
-      <!-- Replace video links below with your actual videos -->
-      <iframe src="https://www.youtube.com/embed/fYxW7dYM0DY" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/E-AGFQzB5VU" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/8Z3JjJe-bu8" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/xpUvHKoz7N0" allowfullscreen></iframe>
+    <div class="search-container">
+      <h2>Spiritual Knowledge Search</h2>
+      <form id="google-search" action="https://www.google.com/search" method="GET" target="_blank">
+        <div class="search-options">
+          <label>
+            <input type="radio" name="sitesearch" value="" checked> Entire Web
+          </label>
+          <label>
+            <input type="radio" name="sitesearch" value="youtube.com"> YouTube Only
+          </label>
+          <label>
+            <input type="radio" name="sitesearch" value="wikipedia.org"> Wikipedia
+          </label>
+        </div>
+        <div class="search-input-group">
+          <input type="text" name="q" placeholder="Search spiritual topics..." required>
+          <input type="hidden" name="q" value="+hinduism OR +shiva OR +spirituality">
+          <button type="submit"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div class="quick-links">
+          <p>Quick searches: 
+            <a href="#" class="quick-search" data-term="Shiva mantras">Mantras</a> | 
+            <a href="#" class="quick-search" data-term="Bhagavad Gita teachings">Gita</a> | 
+            <a href="#" class="quick-search" data-term="Hindu festivals">Festivals</a>
+          </p>
+        </div>
+      </form>
     </div>
   </section>
 
-  <section id="about">
-    <h2>हमारे बारे में</h2>
-    <p>Sanatan Sarita एक आध्यात्मिक यूट्यूब चैनल है जो शिव भक्ति, भजन, मंत्र, कथा और सनातन धर्म से जुड़ी जानकारी को समर्पित है। हमारा उद्देश्य सनातन संस्कृति का प्रचार करना और लोगों को आध्यात्मिक रूप से जागरूक बनाना है।</p>
+  <!-- Videos Section with Categories -->
+  <section id="videos" class="videos">
+    <h2><i class="fab fa-youtube"></i> Our YouTube Content</h2>
+    <div class="video-categories">
+      <button class="category-btn active" data-category="all">All Videos</button>
+      <button class="category-btn" data-category="mantras">Mantras</button>
+      <button class="category-btn" data-category="bhajans">Bhajans</button>
+      <button class="category-btn" data-category="lectures">Lectures</button>
+    </div>
+    <div class="video-grid">
+      <!-- Sample videos with data-category attributes -->
+      <div class="video-item" data-category="mantras">
+        <iframe src="https://www.youtube.com/embed/fYxW7dYM0DY" allowfullscreen></iframe>
+        <h3>Powerful Shiva Mantra</h3>
+      </div>
+      <div class="video-item" data-category="bhajans">
+        <iframe src="https://www.youtube.com/embed/E-AGFQzB5VU" allowfullscreen></iframe>
+        <h3>Shiva Bhajan Collection</h3>
+      </div>
+      <div class="video-item" data-category="lectures">
+        <iframe src="https://www.youtube.com/embed/8Z3JjJe-bu8" allowfullscreen></iframe>
+        <h3>Vedic Philosophy Talk</h3>
+      </div>
+      <div class="video-item" data-category="mantras">
+        <iframe src="https://www.youtube.com/embed/xpUvHKoz7N0" allowfullscreen></iframe>
+        <h3>Morning Chants</h3>
+      </div>
+    </div>
   </section>
 
-  <section id="privacy">
-    <h2>प्राइवेसी पॉलिसी</h2>
-    <p>हम किसी भी प्रकार का व्यक्तिगत डेटा एकत्र नहीं करते। हमारी वेबसाइट पर गूगल और यूट्यूब जैसी तृतीय-पक्ष सेवाओं का उपयोग किया गया है जो अपने स्तर पर जानकारी एकत्र कर सकती हैं।</p>
+  <!-- Enhanced About Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <h2><i class="fas fa-om"></i> About Our Mission</h2>
+      <div class="about-content">
+        <img src="about-image.jpg" alt="Spiritual Journey" class="about-image">
+        <div class="about-text">
+          <p>Sanatan Sarita is a spiritual YouTube channel dedicated to Shiva devotion, bhajans, mantras, scriptures, and Hindu wisdom. Our mission is to:</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Preserve and promote Sanatan Dharma</li>
+            <li><i class="fas fa-check-circle"></i> Provide authentic spiritual knowledge</li>
+            <li><i class="fas fa-check-circle"></i> Create a community of seekers</li>
+            <li><i class="fas fa-check-circle"></i> Make ancient wisdom accessible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- New Resources Section -->
+  <section id="resources" class="resources">
+    <h2><i class="fas fa-book-open"></i> Spiritual Resources</h2>
+    <div class="resource-cards">
+      <div class="card">
+        <i class="fas fa-book"></i>
+        <h3>Sacred Texts</h3>
+        <p>Explore the Bhagavad Gita, Vedas, Upanishads and more</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-calendar-alt"></i>
+        <h3>Festival Guide</h3>
+        <p>Dates and significance of Hindu festivals</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-microphone-alt"></i>
+        <h3>Podcasts</h3>
+        <p>Audio teachings for daily listening</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section id="privacy" class="privacy">
+    <h2><i class="fas fa-user-shield"></i> Privacy Policy</h2>
+    <div class="privacy-content">
+      <p>We respect your spiritual journey and privacy:</p>
+      <ul>
+        <li>No personal data collection</li>
+        <li>Third-party services (Google/YouTube) may use cookies</li>
+        <li>No tracking of your browsing</li>
+        <li>Secure connections (HTTPS)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Enhanced Chatbot Section -->
   <section class="chatbot">
-    <h2>Sanatan AI ChatBot</h2>
-    <iframe src="https://www.chatbase.co/chatbot-embed/YOUR_CHATBOT_ID" width="100%" height="500" frameborder="0" allow="clipboard-write"></iframe>
-    <!-- Replace YOUR_CHATBOT_ID with your actual Chatbase or Botpress chatbot -->
+    <h2><i class="fas fa-robot"></i> Spiritual Guidance ChatBot</h2>
+    <div class="chatbot-container">
+      <iframe src="https://www.chatbase.co/chatbot-embed/YOUR_CHATBOT_ID" 
+              width="100%" height="500" frameborder="0" allow="clipboard-write"></iframe>
+      <div class="chatbot-suggestions">
+        <p>Ask me about:</p>
+        <button class="suggestion-btn" data-question="Teachings of Shiva">Shiva's Teachings</button>
+        <button class="suggestion-btn" data-question="Daily spiritual practice">Daily Practice</button>
+        <button class="suggestion-btn" data-question="Meaning of Om">Meaning of Om</button>
+      </div>
+    </div>
   </section>
 
+  <!-- Enhanced Footer -->
   <footer>
-    <p>&copy; 2025 Sanatan Sarita | सभी अधिकार सुरक्षित</p>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sanatan Sarita</h3>
+        <p>Connecting seekers with eternal wisdom</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#"><i class="fas fa-video"></i> YouTube Channel</a></li>
+          <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp Group</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Sanatan Sarita | All Rights Reserved</p>
+      <p class="disclaimer">Content provided for spiritual purposes only</p>
+    </div>
   </footer>
+
+  <!-- JavaScript for enhanced functionality -->
+  <script>
+    // Quick search functionality
+    document.querySelectorAll('.quick-search').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const searchTerm = this.getAttribute('data-term');
+        document.querySelector('input[name="q"]').value = searchTerm + " site:youtube.com OR site:wikipedia.org";
+        document.getElementById('google-search').submit();
+      });
+    });
+
+    // Video category filtering
+    document.querySelectorAll('.category-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelector('.category-btn.active').classList.remove('active');
+        this.classList.add('active');
+        
+        const category = this.getAttribute('data-category');
+        const videos = document.querySelectorAll('.video-item');
+        
+        videos.forEach(video => {
+          if (category === 'all' || video.getAttribute('data-category') === category) {
+            video.style.display = 'block';
+          } else {
+            video.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Chatbot suggestions
+    document.querySelectorAll('.suggestion-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const question = this.getAttribute('data-question');
+        // This would normally send the question to the chatbot
+        alert("Chatbot feature would ask: " + question);
+      });
+    });
+  </script>
 </body>
-</html>
+        </html>
